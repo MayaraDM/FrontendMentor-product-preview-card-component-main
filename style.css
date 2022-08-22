@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', 'Fraunces', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+    /*border: 1px solid;*/
 }
 img {
     height: 100%;
@@ -24,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
-    width: 80%;
+    width: 300px;
     height: 90vh;
     border-radius: 10px;
 }
@@ -61,11 +62,12 @@ p {
 .discount-price {
     color: hsl(158, 36%, 37%);
     font-size: 28px;
+    font-family: 'Fraunces';
 }
 .old-price {
     text-decoration: line-through;
     color: hsl(228, 12%, 48%);
-    margin-left: 30px;
+    margin-left: 20px;
 }
 button {
     display: flex;
@@ -77,6 +79,7 @@ button {
     border-radius: 5px;
     padding: 15px;
     color: hsl(0, 0%, 100%);
+    font-weight: 700;
 }
 button img {
     width: 14px;
@@ -97,24 +100,30 @@ button:hover {
 }
 
 /* Desktop 1440px*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
     .main-container {
         display: flex;
         flex-direction: row;
         background-color: hsl(0, 0%, 100%);
-        width: 40%;
-        height: 60%;
+        width: 600px;
+        height: 450px;
         border-radius: 10px;
     }
     figure {
-        width: 60%;
+        display: block;
+        width: 55%;
         height: 100%;
     }
     figure img {
         border-radius: 10px 0 0 10px;
+        object-fit: cover;
     }
     .text-container {
-        width: 50%;
-        height: 90%;
+            width: 45%;
+            margin: 0px 30px 0px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
     }
 }
